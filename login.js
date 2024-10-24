@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
-import { SafeAreVienw } from "react-native-web";
+import { SafeAreaView } from "react-native-web";
 
 const LoginScreen = () =>  {
   return (
@@ -31,7 +31,8 @@ const LoginScreen = () =>  {
       </View>
     </SafeAreaView>
     );
-  }
+}
+
 const styles = StyLeSheet.create({
   container: {
     flex: 1,
@@ -51,7 +52,39 @@ const styles = StyLeSheet.create({
     marginBottom: 20,
     justifyContent: "center",
     padding: 20,
-    flexDirection:
-  }
+    flexDirection: "row",
+    alignItems: "center",
+    borderColor: "black",
+  },
+  inputText: {
+      height: 50,
+      color: "black",
+      flex: 1,
+      borderColor: "black",
+  },
+  loginBtn: {
+   width: "80%",
+   backgroundColor: "#fb5bSa",
+   borderRadius: 25,
+   height: 50,
+   alignItems: "center",
+   justifyContent: "center",
+   marginTop: 40,
+   marginBpttom: 10,
+  
+  },
+  loginText: {
+    color: "white",
+  },
+  background: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+    backgroundColor: "#f5f5dc",
+  },
 
-        
+});
+
+export default LoginScreen;
+  
+  
